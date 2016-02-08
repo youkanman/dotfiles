@@ -1,5 +1,0 @@
-" ファイル指定で開かれた場合はNERDTreeは表示しない
-if !argc()
-"    autocmd vimenter * NERDTree|normal gg3j
-endif
-
