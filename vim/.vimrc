@@ -45,6 +45,12 @@ syntax on
 
 " 行番号表示
 set number
+" タブ制御
+set expandtab
+set tabstop=2
+set shiftwidth=2
+" <DEL>補正
+set backspace=indent,eol,start
 
 " ファイル指定で開かれた場合はNERDTreeは表示しない
 if !argc()

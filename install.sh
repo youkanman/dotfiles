@@ -4,7 +4,7 @@ VIM_DOT_FILES=( .vimrc .vim )
 
 for file in ${VIM_DOT_FILES[@]}
 do
-q  ln -s $HOME/dotfiles/vim/$file $HOME/$file
+  ln -s $HOME/dotfiles/vim/$file $HOME/$file
 done
 
 #GIT_DOT_FILES=( .gitconfig .gitignore )
