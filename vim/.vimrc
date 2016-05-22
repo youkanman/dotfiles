@@ -24,6 +24,12 @@ endif
 " NeoBundle 'https://bitbucket.org/kovisoft/slimv'
 NeoBundle 'scrooloose/nerdtree'
 
+NeoBundle 'bronson/vim-trailing-whitespace'
+if neobundle#tap('vim-trailing-whitespace')
+  " uniteでスペースが表示されるので、設定でOFFにします。
+  let g:extra_whitespace_ignored_filetypes = ['unite']
+endif
+
 " NeoBundle 'vim-ruby/vim-ruby'
 " NeoBundle 'tpope/vim-rails'
 " コメントON/OFF
@@ -51,6 +57,11 @@ set tabstop=2
 set shiftwidth=2
 " <DEL>補正
 set backspace=indent,eol,start
+
+" ファイルエンコード
+set encoding=utf-8
+set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+set fileformats=unix,dos,mac
 
 " ファイル指定で開かれた場合はNERDTreeは表示しない
 if !argc()
