@@ -59,9 +59,9 @@ set shiftwidth=2
 set backspace=indent,eol,start
 
 " ファイルエンコード
-set encoding=utf-8
-set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
-set fileformats=unix,dos,mac
+" set encoding=utf-8
+" set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+" set fileformats=unix,dos,mac
 
 " ファイル指定で開かれた場合はNERDTreeは表示しない
 if !argc()
